@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FSCamViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : FSCamViewController
 
 @end
-

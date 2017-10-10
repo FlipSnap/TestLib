@@ -1,0 +1,16 @@
+PODS:
+  - FlipSnap (0.1.6)
+
+DEPENDENCIES:
+  - FlipSnap (from `~/Documents/Development/FlipSnap`)
+
+EXTERNAL SOURCES:
+  FlipSnap:
+    :path: ~/Documents/Development/FlipSnap
+
+SPEC CHECKSUMS:
+  FlipSnap: 14cd6c324c61de9311d08e36a0feb66d12986ae5
+
+PODFILE CHECKSUM: b76ba0cd1c505d874414234a1bc774746004ea9c
+
+COCOAPODS: 1.3.1
