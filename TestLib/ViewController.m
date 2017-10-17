@@ -87,6 +87,12 @@
     }
 }
 
+-(IBAction)switchCameraToFront:(id)sender {
+    [self frontCameraWithCompletion:^{
+        NSLog(@"done");
+    }];
+}
+
 -(IBAction)changeSaturation:(id)sender {
     UISlider *slider = (UISlider *)sender;
     [self setSaturation:slider.value];
