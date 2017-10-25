@@ -50,11 +50,13 @@
     NSString *documentPath = [searchPaths objectAtIndex:0];
     NSString *path = [documentPath stringByAppendingPathComponent:@"background.mov"];
     NSURL *url = [[NSURL alloc] initFileURLWithPath:path];
-    [self extractVideoURL:url];
+    //[self extractVideoURL:url];
     //[self extractPictureURL:url];
 }
 
 - (void)viewDidLoad {
+
+    [self setVideoSessionPreset:AVCaptureSessionPreset1280x720];
 
     [self clearTempDirectory];
     UISlider *slider = [[UISlider alloc] init];
