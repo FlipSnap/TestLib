@@ -129,6 +129,18 @@
                                     <action selector="changeSaturation:" destination="BYZ-38-t0r" eventType="valueChanged" id="pwf-Xe-dcB"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOs-aa-PN9">
+                                <rect key="frame" x="16" y="133" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FBO-2R-OGq"/>
+                                    <constraint firstAttribute="width" constant="120" id="zd8-Cm-hZl"/>
+                                </constraints>
+                                <state key="normal" title="Pick Image"/>
+                                <connections>
+                                    <action selector="selectPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEd-dI-ozc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -147,9 +159,11 @@
                             <constraint firstItem="hzZ-gv-vif" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YEa-DV-jX8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cp7-Xz-itk" secondAttribute="trailing" constant="18" id="aTb-U7-lEx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FD9-Le-Ncu" secondAttribute="trailing" constant="16" id="auT-ku-aV4"/>
+                            <constraint firstItem="aOs-aa-PN9" firstAttribute="top" secondItem="h6b-51-dRU" secondAttribute="bottom" constant="8" id="dFB-cc-H4Y"/>
                             <constraint firstItem="FD9-Le-Ncu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="eB8-dF-L0v"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="F0A-4J-jBG" secondAttribute="trailing" constant="18" id="f4I-ca-yNi"/>
                             <constraint firstItem="j6F-oG-Std" firstAttribute="top" secondItem="hzZ-gv-vif" secondAttribute="bottom" constant="8" id="fZE-9g-Aub"/>
+                            <constraint firstItem="aOs-aa-PN9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fyH-PJ-EVk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hzZ-gv-vif" secondAttribute="trailing" constant="16" id="gyq-Be-yzJ"/>
                             <constraint firstItem="LVG-ud-91G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="238" id="nwh-Ji-odI"/>
                             <constraint firstItem="FD9-Le-Ncu" firstAttribute="top" secondItem="xvW-ev-Pon" secondAttribute="bottom" constant="8" id="p0c-3a-539"/>

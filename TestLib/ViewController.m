@@ -10,12 +10,14 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 @import Photos;
 
-@interface ViewController () {
+@interface ViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
     NSTimer *_labelTimer;
     IBOutlet UILabel *versionLabel;
     float blendmode;
+    UIImagePickerController *picker;
 }
 
 @property(nonatomic, strong) IBOutlet UILabel *framerateLabel;
@@ -44,17 +46,14 @@
     self.framerateLabel.text = frameRateString;
 }
 
--(void)loadAsset {
-    // TODO: put movie here
-    NSArray *searchPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentPath = [searchPaths objectAtIndex:0];
-    NSString *path = [documentPath stringByAppendingPathComponent:@"background.mov"];
-    NSURL *url = [[NSURL alloc] initFileURLWithPath:path];
-    //[self extractVideoURL:url];
-    //[self extractPictureURL:url];
-}
-
 - (void)viewDidLoad {
+
+    picker = [[UIImagePickerController alloc] init];
+    picker.delegate = self;
+    picker.mediaTypes = @[(NSString*)kUTTypeMovie, (NSString*)kUTTypeAVIMovie, (NSString*)kUTTypeVideo, (NSString*)kUTTypeMPEG4];
+
+    //picker.allowsEditing = YES;
+    picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
 
     [self setVideoSessionPreset:AVCaptureSessionPreset1280x720];
 
@@ -66,10 +65,24 @@
     [self showVersion];
     blendmode = 0.0f;
 
-    [self loadAsset];
-
     [super viewDidLoad];
 }
+
+- (IBAction)selectPhoto:(UIButton *)sender {
+    [self presentViewController:picker animated:YES completion:NULL];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    NSURL *videoURL = [info objectForKey:UIImagePickerControllerMediaURL];
+    NSLog(@"VideoURL = %@", videoURL);
+    [self extractVideoURL:videoURL];
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+}
+
 
 - (void)showVersion {
     NSDictionary *infoDict = [[NSBundle mainBundle] infoDictionary];
