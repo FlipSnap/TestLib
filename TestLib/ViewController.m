@@ -65,12 +65,19 @@
     [self showVersion];
     blendmode = 0.0f;
 
+    //self.maximumFramesImported = 30;
+
     [super viewDidLoad];
 }
 
 - (IBAction)selectPhoto:(UIButton *)sender {
     [self presentViewController:picker animated:YES completion:NULL];
 }
+
+- (IBAction)rotateBackgroundPress:(UIButton *)sender {
+    [self rotateBackground];
+}
+
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     NSURL *videoURL = [info objectForKey:UIImagePickerControllerMediaURL];

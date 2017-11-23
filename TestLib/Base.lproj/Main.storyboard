@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Bp-La-bZk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Bp-La-bZk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -141,12 +141,25 @@
                                     <action selector="selectPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEd-dI-ozc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMW-Wa-yMB">
+                                <rect key="frame" x="16" y="172" width="120" height="30"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8zB-Mm-IgS"/>
+                                    <constraint firstAttribute="width" constant="120" id="xL0-MH-rtL"/>
+                                </constraints>
+                                <state key="normal" title="Rotate BG"/>
+                                <connections>
+                                    <action selector="rotateBackgroundPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bi7-Of-8cq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fx1-ax-uXx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="9S1-h6-xLw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FD9-Le-Ncu" secondAttribute="bottom" constant="20" id="Cfy-fo-Dbu"/>
                             <constraint firstItem="hzZ-gv-vif" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ClW-qf-Axe"/>
+                            <constraint firstItem="fMW-Wa-yMB" firstAttribute="top" secondItem="aOs-aa-PN9" secondAttribute="bottom" constant="9" id="DYf-g5-ogn"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="j6F-oG-Std" secondAttribute="trailing" constant="20" symbolic="YES" id="Ffg-rm-eaC"/>
                             <constraint firstItem="dYX-Zk-xMu" firstAttribute="top" secondItem="LVG-ud-91G" secondAttribute="bottom" constant="8" id="Fvs-3E-e9a"/>
                             <constraint firstItem="fx1-ax-uXx" firstAttribute="top" secondItem="hzZ-gv-vif" secondAttribute="bottom" constant="8" id="Ina-xF-fdW"/>
@@ -165,6 +178,7 @@
                             <constraint firstItem="j6F-oG-Std" firstAttribute="top" secondItem="hzZ-gv-vif" secondAttribute="bottom" constant="8" id="fZE-9g-Aub"/>
                             <constraint firstItem="aOs-aa-PN9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fyH-PJ-EVk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hzZ-gv-vif" secondAttribute="trailing" constant="16" id="gyq-Be-yzJ"/>
+                            <constraint firstItem="fMW-Wa-yMB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iLd-i7-Rpl"/>
                             <constraint firstItem="LVG-ud-91G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="238" id="nwh-Ji-odI"/>
                             <constraint firstItem="FD9-Le-Ncu" firstAttribute="top" secondItem="xvW-ev-Pon" secondAttribute="bottom" constant="8" id="p0c-3a-539"/>
                             <constraint firstItem="j6F-oG-Std" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="spl-qY-Mej"/>

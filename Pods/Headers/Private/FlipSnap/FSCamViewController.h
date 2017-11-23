@@ -1,1 +1,1 @@
-../../../../../FlipSnap/FlipSnap/Classes/FSCamViewController.h
+../../../FlipSnap/FlipSnap/Classes/FSCamViewController.h
