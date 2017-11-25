@@ -136,7 +136,7 @@
                                     <constraint firstAttribute="height" constant="30" id="FBO-2R-OGq"/>
                                     <constraint firstAttribute="width" constant="120" id="zd8-Cm-hZl"/>
                                 </constraints>
-                                <state key="normal" title="Pick Image"/>
+                                <state key="normal" title="Pick Video"/>
                                 <connections>
                                     <action selector="selectPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEd-dI-ozc"/>
                                 </connections>

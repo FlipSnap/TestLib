@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		06741F728AC6243CAB5E4188B5A449C0 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = D05C10A127E6ED511776B425063F4AC4 /* mask.png */; };
+		06741F728AC6243CAB5E4188B5A449C0 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E57A3070E2DBB58473620B148024EDD /* mask.png */; };
 		3E0F919C02F0CF6F285669CE4CEDFDBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		A8B54808E0A37206C68585C214DA3932 /* Pods-TestLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D435E0ECCD576D3279ABE536DF12559E /* Pods-TestLib-dummy.m */; };
-		E2BB4E44968A390BD7B6ECA84AAF4F14 /* checkers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59C1588FB444772075B93A4722E18BD8 /* checkers.jpg */; };
+		E2BB4E44968A390BD7B6ECA84AAF4F14 /* checkers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F50F2AB6C96E359A274BB36B7E623C12 /* checkers.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,22 +25,22 @@
 
 /* Begin PBXFileReference section */
 		02E7EAA7F650ADE666954B325709D841 /* Pods-TestLib-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestLib-frameworks.sh"; sourceTree = "<group>"; };
-		19919AE028991CDB2EE4858B5D6B0AC5 /* libFlipSnapLibrary.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libFlipSnapLibrary.a; path = FlipSnap/libFlipSnapLibrary.a; sourceTree = "<group>"; };
+		08A3022D9F0ED8E911F4AF4F6AA1AF7F /* FSPicViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSPicViewController.h; path = FlipSnap/Classes/FSPicViewController.h; sourceTree = "<group>"; };
 		280CE1422E32A0BEBF24258855DEEFD5 /* Pods-TestLib-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TestLib-acknowledgements.plist"; sourceTree = "<group>"; };
-		2D7C67D3C033BB658737D10CACD9AE35 /* FSPicViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSPicViewController.h; path = FlipSnap/Classes/FSPicViewController.h; sourceTree = "<group>"; };
+		36FD21B26111F8106700B7524B6316B7 /* FSCamViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCamViewController.h; path = FlipSnap/Classes/FSCamViewController.h; sourceTree = "<group>"; };
 		4F802618BF4B3B16D0578C98028FC7E6 /* Pods-TestLib-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TestLib-resources.sh"; sourceTree = "<group>"; };
 		53221ACED30B7AEAB1FB82A2EBEA2BE1 /* Pods-TestLib-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TestLib-acknowledgements.markdown"; sourceTree = "<group>"; };
-		59C1588FB444772075B93A4722E18BD8 /* checkers.jpg */ = {isa = PBXFileReference; includeInIndex = 1; name = checkers.jpg; path = FlipSnap/Assets/checkers.jpg; sourceTree = "<group>"; };
 		620153ECEB37B4A8D13BB53AD510AA22 /* Pods-TestLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestLib.debug.xcconfig"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		662EA93D9D94BD5998DA9CB9F610117D /* libFlipSnapLibrary.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libFlipSnapLibrary.a; path = FlipSnap/libFlipSnapLibrary.a; sourceTree = "<group>"; };
 		797AC01987F5097BB05060281720FF33 /* FlipSnap.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = FlipSnap.bundle; path = FlipSnap.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E57A3070E2DBB58473620B148024EDD /* mask.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = mask.png; path = FlipSnap/Assets/mask.png; sourceTree = "<group>"; };
 		8FCE55F347689B64600269407464D605 /* Pods-TestLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TestLib.release.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A8998ED522224E1162345F38911D1CE9 /* FSCamViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCamViewController.h; path = FlipSnap/Classes/FSCamViewController.h; sourceTree = "<group>"; };
-		C25E9AEF5CFAF5314B33042E125F6C9A /* ResourceBundle-FlipSnap-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FlipSnap-Info.plist"; sourceTree = "<group>"; };
-		D05C10A127E6ED511776B425063F4AC4 /* mask.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = mask.png; path = FlipSnap/Assets/mask.png; sourceTree = "<group>"; };
+		B1AAA8D7ADE83B0D4C870CEB1E62AFA8 /* ResourceBundle-FlipSnap-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-FlipSnap-Info.plist"; sourceTree = "<group>"; };
 		D435E0ECCD576D3279ABE536DF12559E /* Pods-TestLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TestLib-dummy.m"; sourceTree = "<group>"; };
 		EE924DF552D07705D9502919B00A312C /* libPods-TestLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TestLib.a"; path = "libPods-TestLib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50F2AB6C96E359A274BB36B7E623C12 /* checkers.jpg */ = {isa = PBXFileReference; includeInIndex = 1; name = checkers.jpg; path = FlipSnap/Assets/checkers.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,18 +85,18 @@
 			path = "Target Support Files/Pods-TestLib";
 			sourceTree = "<group>";
 		};
-		29CB1CCC3B99C388AE0E5D0D49BFA8F0 /* FlipSnap */ = {
+		3CD275177746E0ECE7F1F763AE379451 /* FlipSnap */ = {
 			isa = PBXGroup;
 			children = (
-				A8998ED522224E1162345F38911D1CE9 /* FSCamViewController.h */,
-				2D7C67D3C033BB658737D10CACD9AE35 /* FSPicViewController.h */,
-				99BD7AC8CDE8CD88AFFCA75BDF4CE0EF /* Frameworks */,
-				61E35C913763F433486BDF5A5CBD98D7 /* Resources */,
-				856F4F8EBA2B7AF58CB17B74D85CE5F8 /* Support Files */,
+				36FD21B26111F8106700B7524B6316B7 /* FSCamViewController.h */,
+				08A3022D9F0ED8E911F4AF4F6AA1AF7F /* FSPicViewController.h */,
+				8EF9A8D591FB2A1C97F1BC757CBC6646 /* Frameworks */,
+				CDA017B6EB4A3F5FC7E7DBE4A832F805 /* Resources */,
+				76B68D97D3000DAA1AE497208822097C /* Support Files */,
 			);
 			name = FlipSnap;
-			path = FlipSnap;
-			sourceTree = "<group>";
+			path = /Users/robnewport/Documents/Development/FlipSnap;
+			sourceTree = "<absolute>";
 		};
 		5F5399AD86C497E00FDBB1BFD644993B /* Products */ = {
 			isa = PBXGroup;
@@ -107,47 +107,30 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		61E35C913763F433486BDF5A5CBD98D7 /* Resources */ = {
+		76B68D97D3000DAA1AE497208822097C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				59C1588FB444772075B93A4722E18BD8 /* checkers.jpg */,
-				D05C10A127E6ED511776B425063F4AC4 /* mask.png */,
+				B1AAA8D7ADE83B0D4C870CEB1E62AFA8 /* ResourceBundle-FlipSnap-Info.plist */,
 			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		6FC9F8DA0D24370FC3C1C88CD94A7A87 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				29CB1CCC3B99C388AE0E5D0D49BFA8F0 /* FlipSnap */,
-			);
-			name = Pods;
+			name = "Support Files";
+			path = "../TestLib/Pods/Target Support Files/FlipSnap";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D258E7AAE73A1785CBF46E907185DD1D /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				6FC9F8DA0D24370FC3C1C88CD94A7A87 /* Pods */,
 				5F5399AD86C497E00FDBB1BFD644993B /* Products */,
 				176D99557B1E0491A038960CD4CC32AD /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		856F4F8EBA2B7AF58CB17B74D85CE5F8 /* Support Files */ = {
+		8EF9A8D591FB2A1C97F1BC757CBC6646 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C25E9AEF5CFAF5314B33042E125F6C9A /* ResourceBundle-FlipSnap-Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FlipSnap";
-			sourceTree = "<group>";
-		};
-		99BD7AC8CDE8CD88AFFCA75BDF4CE0EF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				19919AE028991CDB2EE4858B5D6B0AC5 /* libFlipSnapLibrary.a */,
+				662EA93D9D94BD5998DA9CB9F610117D /* libFlipSnapLibrary.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,6 +141,23 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDA017B6EB4A3F5FC7E7DBE4A832F805 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F50F2AB6C96E359A274BB36B7E623C12 /* checkers.jpg */,
+				8E57A3070E2DBB58473620B148024EDD /* mask.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D258E7AAE73A1785CBF46E907185DD1D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CD275177746E0ECE7F1F763AE379451 /* FlipSnap */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {

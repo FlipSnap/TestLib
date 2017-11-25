@@ -1,1 +1,1 @@
-../../../FlipSnap/FlipSnap/Classes/FSPicViewController.h
+../../../../../FlipSnap/FlipSnap/Classes/FSPicViewController.h
