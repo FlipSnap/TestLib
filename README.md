@@ -18,3 +18,4 @@ algorithm.txt
 
 7. Please look inside the code to see how things are done using the library. 
 
+8. Saved Videos are saved into the “Photos” app on your iPhone. Please check there after you make a recoding. 
