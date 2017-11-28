@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8231C2DB16DD0F78B694FB1B /* libPods-TestLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 560D982552A37207799A2E25 /* libPods-TestLib.a */; };
 		FE4F7A8D1F5CEE1C00372820 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FE4F7A8C1F5CEE1C00372820 /* Podfile */; };
+		FE516CFA1FCCFA56001A341B /* AVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE516CF91FCCFA56001A341B /* AVViewController.m */; };
 		FE53F14A1F5CD5B700D48267 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE53F1491F5CD5B700D48267 /* AppDelegate.m */; };
 		FE53F14D1F5CD5B700D48267 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE53F14C1F5CD5B700D48267 /* ViewController.m */; };
 		FE53F1501F5CD5B700D48267 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE53F14E1F5CD5B700D48267 /* Main.storyboard */; };
@@ -25,6 +26,8 @@
 		DC19C03691BB8B39AD6865EC /* Pods-TestLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestLib/Pods-TestLib.debug.xcconfig"; sourceTree = "<group>"; };
 		E7274B4EF651A5A8BC986945 /* Pods-TestLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestLib.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestLib/Pods-TestLib.release.xcconfig"; sourceTree = "<group>"; };
 		FE4F7A8C1F5CEE1C00372820 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FE516CF81FCCFA56001A341B /* AVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVViewController.h; sourceTree = "<group>"; };
+		FE516CF91FCCFA56001A341B /* AVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVViewController.m; sourceTree = "<group>"; };
 		FE53F1451F5CD5B700D48267 /* TestLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE53F1481F5CD5B700D48267 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FE53F1491F5CD5B700D48267 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,6 +105,8 @@
 				FE53F14B1F5CD5B700D48267 /* ViewController.h */,
 				FE53F14C1F5CD5B700D48267 /* ViewController.m */,
 				FE53F14E1F5CD5B700D48267 /* Main.storyboard */,
+				FE516CF81FCCFA56001A341B /* AVViewController.h */,
+				FE516CF91FCCFA56001A341B /* AVViewController.m */,
 				FE53F1511F5CD5B700D48267 /* Assets.xcassets */,
 				FE53F1531F5CD5B700D48267 /* LaunchScreen.storyboard */,
 				FE53F1561F5CD5B700D48267 /* Info.plist */,
@@ -241,6 +246,7 @@
 			files = (
 				FE53F14D1F5CD5B700D48267 /* ViewController.m in Sources */,
 				FE53F1581F5CD5B700D48267 /* main.m in Sources */,
+				FE516CFA1FCCFA56001A341B /* AVViewController.m in Sources */,
 				FE53F14A1F5CD5B700D48267 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

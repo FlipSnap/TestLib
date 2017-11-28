@@ -11,6 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "AVViewController.h"
 @import Photos;
 
 @interface ViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
@@ -130,7 +131,8 @@
 
 -(void)recordingStoppedForMovieAtURL:(NSURL *)url {
     if( UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(url.relativePath) == true){
-        UISaveVideoAtPathToSavedPhotosAlbum(url.relativePath, nil, nil, nil);
+        //UISaveVideoAtPathToSavedPhotosAlbum(url.relativePath, nil, nil, nil);
+        [self performSegueWithIdentifier:@"avplayer" sender:url];
     }
 }
 
@@ -153,7 +155,13 @@
     [self stopRecording];
 }
 
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if( [segue.identifier isEqualToString:@"avplayer"] == true){
+        AVViewController *avviewcontroller = [segue destinationViewController];
+        NSURL *url = (NSURL *)sender;
+        avviewcontroller.videoURL = url;
+    }
+}
 
 
 

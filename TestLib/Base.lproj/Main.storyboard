@@ -194,11 +194,27 @@
                         <outlet property="swatch" destination="xvW-ev-Pon" id="BLk-MY-RW1"/>
                         <outlet property="toleranceSlider" destination="hzZ-gv-vif" id="aIm-9K-Wim"/>
                         <outlet property="versionLabel" destination="h6b-51-dRU" id="qa1-oM-uva"/>
+                        <segue destination="MD6-Hh-qeS" kind="show" identifier="avplayer" id="Qxw-AI-Dfq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1374" y="463"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cR7-rJ-j8m">
+            <objects>
+                <viewController id="MD6-Hh-qeS" customClass="AVViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sso-4z-vTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="KSG-Y9-ET9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q64-5g-7ft" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2177" y="463"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="n9S-gH-Tfx">
