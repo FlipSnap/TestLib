@@ -76,15 +76,22 @@
 }
 
 - (IBAction)rotateBackgroundPress:(UIButton *)sender {
-    [self rotateBackground];
+    NSLog(@"starting");
+    [self rotateBackgroundWithCompletion:^{
+        NSLog(@"done");
+    }];
 }
 
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     NSURL *videoURL = [info objectForKey:UIImagePickerControllerMediaURL];
-    NSLog(@"VideoURL = %@", videoURL);
-    [self extractVideoURL:videoURL];
-    [picker dismissViewControllerAnimated:YES completion:NULL];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        [self extractVideoURL:videoURL withCompletion:^{
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [picker dismissViewControllerAnimated:YES completion:NULL];
+            });
+        }];
+    });
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
