@@ -148,6 +148,12 @@
     [self invertBackground:s.isOn];
 }
 
+-(IBAction)startPicture {
+    [self startPictureWithCompletion:^(UIImage *image){
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+    }];
+}
+
 -(IBAction)startRecording:(id)sender {
     UIButton *btn = (UIButton *)sender;
     btn.backgroundColor = [UIColor redColor];

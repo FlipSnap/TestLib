@@ -1,5 +1,5 @@
 PODS:
-  - FlipSnap (0.2.3)
+  - FlipSnap (0.2.4)
 
 DEPENDENCIES:
   - FlipSnap (from `~/Documents/Development/FlipSnap`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ~/Documents/Development/FlipSnap
 
 SPEC CHECKSUMS:
-  FlipSnap: 16a7c2e908dc2e4b9a0ffe18c0618eec88d5038d
+  FlipSnap: 2de2ef7372a981393358da7f9871aeceb68de58d
 
 PODFILE CHECKSUM: b51a8b750b93702f8bb8ba4e57dccdaf84feb916
 
