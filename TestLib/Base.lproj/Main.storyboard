@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -230,10 +231,31 @@
                                     <action selector="changeSaturation:" destination="BYZ-38-t0r" eventType="valueChanged" id="pwf-Xe-dcB"/>
                                 </connections>
                             </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fda-gv-ScY">
+                                <rect key="frame" x="312" y="396" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="Raf-qS-bun"/>
+                                    <constraint firstAttribute="width" constant="47" id="pkh-ye-3YF"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="depthFilterSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="HyP-1E-8uy"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjW-jr-fkt">
+                                <rect key="frame" x="238" y="396" width="62" height="31"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="Lda-Bu-a4T"/>
+                                    <constraint firstAttribute="height" constant="31" id="YBB-UA-AU4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="F0A-4J-jBG" firstAttribute="top" secondItem="dYX-Zk-xMu" secondAttribute="bottom" constant="8" id="2Xh-4J-y7w"/>
+                            <constraint firstItem="Fda-gv-ScY" firstAttribute="leading" secondItem="pjW-jr-fkt" secondAttribute="trailing" constant="12" id="2YP-rx-uN9"/>
                             <constraint firstItem="62P-jq-Gmv" firstAttribute="top" secondItem="OQn-s8-A6b" secondAttribute="bottom" constant="8" id="8Gl-LN-bDe"/>
                             <constraint firstItem="3Oa-u9-JkL" firstAttribute="top" secondItem="62P-jq-Gmv" secondAttribute="bottom" constant="8" id="8zj-ff-69M"/>
                             <constraint firstItem="te8-HS-2qs" firstAttribute="leading" secondItem="yp6-Tx-830" secondAttribute="trailing" constant="8" id="AvN-WJ-eXT"/>
@@ -242,9 +264,11 @@
                             <constraint firstItem="hzZ-gv-vif" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ClW-qf-Axe"/>
                             <constraint firstItem="FD9-Le-Ncu" firstAttribute="leading" secondItem="UIB-Y3-Yfu" secondAttribute="trailing" constant="8" id="D4d-CG-GJ3"/>
                             <constraint firstItem="fMW-Wa-yMB" firstAttribute="top" secondItem="aOs-aa-PN9" secondAttribute="bottom" constant="9" id="DYf-g5-ogn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Fda-gv-ScY" secondAttribute="trailing" constant="16" id="E4b-Fb-aTH"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="j6F-oG-Std" secondAttribute="trailing" constant="20" symbolic="YES" id="Ffg-rm-eaC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dYX-Zk-xMu" secondAttribute="trailing" constant="16" id="Gwn-k5-ttV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="62P-jq-Gmv" secondAttribute="trailing" constant="16" id="Ir4-zp-eaE"/>
+                            <constraint firstItem="Fda-gv-ScY" firstAttribute="top" secondItem="3Oa-u9-JkL" secondAttribute="bottom" constant="8" id="LB1-55-oGK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LVG-ud-91G" secondAttribute="trailing" constant="16" id="OJc-4W-1vo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cp7-Xz-itk" secondAttribute="trailing" constant="20" id="Pfp-W9-XfX"/>
                             <constraint firstItem="1lR-oC-e9Q" firstAttribute="top" secondItem="dYX-Zk-xMu" secondAttribute="bottom" constant="8" id="Pip-UK-n8N"/>
@@ -267,6 +291,7 @@
                             <constraint firstItem="LVG-ud-91G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gu6-IH-nzy"/>
                             <constraint firstItem="te8-HS-2qs" firstAttribute="top" secondItem="Cp7-Xz-itk" secondAttribute="bottom" constant="40" id="hnh-td-Ccz"/>
                             <constraint firstItem="fMW-Wa-yMB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iLd-i7-Rpl"/>
+                            <constraint firstItem="pjW-jr-fkt" firstAttribute="top" secondItem="3Oa-u9-JkL" secondAttribute="bottom" constant="8" id="jd4-Z4-Awq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fx1-ax-uXx" secondAttribute="trailing" constant="16" id="lxL-wM-n8s"/>
                             <constraint firstItem="Cp7-Xz-itk" firstAttribute="top" secondItem="F0A-4J-jBG" secondAttribute="bottom" constant="8" id="nro-Tx-uep"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aOs-aa-PN9" secondAttribute="trailing" constant="20" symbolic="YES" id="nwb-7M-Xab"/>

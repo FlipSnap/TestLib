@@ -76,6 +76,10 @@
     [self depthOn:sender.isOn];
 }
 
+- (IBAction)depthFilterSwitch:(UISwitch *)sender {
+    [self depthFiltered:sender.isOn];
+}
+
 - (IBAction)selectPhoto:(UIButton *)sender {
     [self presentViewController:picker animated:YES completion:NULL];
 }
